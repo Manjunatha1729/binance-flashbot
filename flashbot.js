@@ -8,7 +8,7 @@ const Web3 = require("web3")
 
 
 // wallet that send's BNB to claim 
-var seed = ""
+var seed = "stuff emerge state amateur steak script fuel upper pumpkin time resource labor"
 let mnemonicWallet = ethersWallet.fromMnemonic(seed);
 var PRIVATEKEY = mnemonicWallet.privateKey;
 var myAddress = mnemonicWallet.address

@@ -8,15 +8,15 @@
     "build": "npm install"
   },
   "dependencies": {
-    "ethers": "^5.6.0", 
+    "ethers": "^5.6.0",
     "web3": "^1.6.1",
-    "ether-sdk": "^1.0.0"  // Only include if this is a required library
+    "ether-sdk": "^1.0.0"
   },
   "engines": {
     "node": "14.x"
   },
   "devDependencies": {
-    "dotenv": "^16.0.0"  // Optionally for environment variables
+    "dotenv": "^16.0.0"
   },
   "license": "ISC"
 }

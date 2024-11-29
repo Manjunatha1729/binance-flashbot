@@ -1,22 +1,19 @@
 {
-  "name": "flashbot",
+  "name": "bnb-transaction-sender",
   "version": "1.0.0",
-  "description": "Binance Flashbot",
-  "main": "flashbot.js",
+  "description": "Send BNB and claim rewards using private keys",
+  "main": "index.js",
   "scripts": {
-    "start": "node flashbot.js",
-    "build": "npm install"
+    "start": "node index.js"
   },
   "dependencies": {
-    "ethers": "^5.6.0",
-    "web3": "^1.6.1",
-    "ether-sdk": "^1.0.0"
-  },
-  "engines": {
-    "node": "14.x"
+    "ethers": "^6.0.0",
+    "web3": "^1.8.0",
+    "express": "^4.18.2"
   },
   "devDependencies": {
-    "dotenv": "^16.0.0"
+    "nodemon": "^2.0.20"
   },
-  "license": "ISC"
+  "author": "Your Name",
+  "license": "MIT"
 }

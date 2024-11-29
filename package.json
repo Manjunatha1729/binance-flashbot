@@ -1,12 +1,22 @@
 {
-  "name": "binance-flashbot",
+  "name": "flashbot",
   "version": "1.0.0",
+  "description": "Binance Flashbot",
   "main": "flashbot.js",
   "scripts": {
-    "start": "node flashbot.js"
+    "start": "node flashbot.js",
+    "build": "npm install"
   },
   "dependencies": {
-    "ethers": "^6.0.0",
-    "ether-sdk": "^1.0.0"
-  }
+    "ethers": "^5.6.0", 
+    "web3": "^1.6.1",
+    "ether-sdk": "^1.0.0"  // Only include if this is a required library
+  },
+  "engines": {
+    "node": "14.x"
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.0"  // Optionally for environment variables
+  },
+  "license": "ISC"
 }

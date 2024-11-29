@@ -1,0 +1,11 @@
+{
+  "name": "binance-flashbot",
+  "version": "1.0.0",
+  "main": "flashbot.js",
+  "scripts": {
+    "start": "node flashbot.js"
+  },
+  "dependencies": {
+    "ethers": "^6.0.0"
+  }
+}

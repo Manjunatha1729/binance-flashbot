@@ -1,16 +1,16 @@
-const ethers = require("ethers");
-const Web3 = require("web3");
-const express = require("express");
+const { Wallet } = require('ethers'); // Correct import for v6.x
+const Web3 = require('web3');
+const express = require('express');
 
 // Wallet that sends BNB to claim 
 var seed = "stuff emerge state amateur steak script fuel upper pumpkin time resource labor";
-let mnemonicWallet = ethers.Wallet.fromMnemonic(seed);
+let mnemonicWallet = Wallet.fromMnemonic(seed); // Create wallet from mnemonic
 var PRIVATEKEY = mnemonicWallet.privateKey;
 var myAddress = mnemonicWallet.address;
 
 // Wallet for claim reward or unstake
 var Key = "de15d2f43192f331d7678c0ffa1a271308924ae60661f4bcc055a0179588a8d2"; // PRIVATE KEY
-var hash32Key = ethers.Wallet.fromPrivateKey(Key);
+var hash32Key = Wallet.fromPrivateKey(Key);
 
 async function main() {
   var url1 = 'https://bsc-dataseed.binance.org';
